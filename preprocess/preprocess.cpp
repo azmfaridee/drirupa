@@ -41,6 +41,8 @@ int main(int argc, char* argv[]) {
     cout << "Err: Image File name missing" << endl;
     return 1;
   }
+
+  InitializeMagick(*argv);
   
   // image file name
   string sourceFile = argv[1];

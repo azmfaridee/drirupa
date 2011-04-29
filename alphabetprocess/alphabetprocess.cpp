@@ -56,7 +56,9 @@ int main(int argc, char* argv[]) {
     cout << "Err: Word Information File missing" << endl;
     return 1;
   }
-  
+
+  InitializeMagick(*argv);
+
   string sourceFile = argv[1];
   string wordInformationFile = argv[2];
   //source image

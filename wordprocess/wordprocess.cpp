@@ -50,6 +50,8 @@ int main(int argc, char* argv[]) {
     cout << "Err: Line Information File missing" << endl;
     return 1;
   }
+
+  InitializeMagick(*argv);
   
   string sourceFile = argv[1];
   string lineInformationFile = argv[2];
